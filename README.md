@@ -1,12 +1,12 @@
-#Api de uma locadora online
+# Api de uma locadora online
 
-##Instalação.
+## Instalação
 
 Após o clone do repositorio, configurar os dados de conexão ao banco de dados MYSQL no arquivo `.env`. Executar o comando `npm install` em seguida o comando `npm run setup` para carregar a lista inicial de filmes.
 
 Rodando o comando `npm test`, são rodadas a criação do banco de dados de teste e o setup no ambiente. Em seguida são disparados os testes.
 
-###Rotas
+## Rotas
 
 Para uma lista dos filmes disponíveis:
 `GET  /movies`
