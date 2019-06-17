@@ -29,14 +29,14 @@ retorna os dados do usuário e um token de authenticação
 
 Para efetuar o logoff do usuário
 `POST /logoff`
-\*Deve ser informado o Header "Authorization:token"
+\*Deve ser informado o Header **"Authorization: ${token}"**
 
 Para alugar um filme:
 `POST /rent-out`
-informando o header "Authorization:token"
+informando o header **"Authorization: ${token}"**
 e o {movie_id} que se quer alugar
 
 Para devolver um filme:
 `POST /return-back`
-informando o Header "Authorization:token"
+informando o Header **"Authorization: ${token}"**
 e o {movie_id} que se deseja devolver
