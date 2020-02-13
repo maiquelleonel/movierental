@@ -21,12 +21,7 @@ module.exports = (router) => {
     router.post('/signup', async (req, res) => {
         let response
         try {
-            const data  = {
-                name: req.params.name,
-                email: req.params.email,
-                password: req.params.password
-            }
-            const user = await services.users(models).create(data)
+            const user = await services.users(models).create(req.body)
             response = await helpers.response.success(user)
         } catch (err) {
             response = await helpers.response.error(err)
